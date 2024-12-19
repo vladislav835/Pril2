@@ -1,0 +1,34 @@
+﻿<Page x:Class="WpfApp2.Reg"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Reg">
+
+    <Grid Grid.Column="0" Grid.ColumnSpan="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,15,5,5"  Text="Введите логин" HorizontalAlignment="Center"/>
+        <TextBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Height="25" Width="200"  Name="textbox1" ></TextBox>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,15,5,5" Text="Введите пароль" HorizontalAlignment="Center"/>
+        <PasswordBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Height="25" Width="200" Name="textbox2" ></PasswordBox>
+
+        <Button Grid.Row="4" Grid.Column="0" Margin="10,100,5,10" Content="Войти" Name="Btn_Vhod" Click="Btn_Vhod_Click" HorizontalAlignment="Center"/>
+
+    </Grid>
+
+</Page>
